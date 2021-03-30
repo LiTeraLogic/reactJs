@@ -1,0 +1,115 @@
+body {
+  background: #181717;
+  background-size: 300% 300%;
+  color: white;
+}
+//C09084
+.full-screen {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+//you need to setup file-loader in webpack before you can use images
+  // background: url("../../assests/image/background.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  //_ works with row or column_
+
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  color: #F32E23;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  font-size: 2em;
+  letter-spacing: -2px;
+  text-align: left;
+}
+
+span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2em;
+  color: #F32E23;
+  font-weight: 800;
+}
+
+label {
+  font-size: 1.2em;
+  font-weight: 800;
+}
+
+input {
+  font-size: 0.9em;
+  display: block;
+}
+
+.button-line {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.9em;
+  opacity: 0.8;
+  padding: 10px 10px;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  display: block;
+  margin-top: 10px;
+
+  &:hover {
+    opacity: 1;
+    background-color: #fff;
+    color: #F32E23;
+  }
+}
+
+@-webkit-keyframes Background {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-moz-keyframes Background {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes Background {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
